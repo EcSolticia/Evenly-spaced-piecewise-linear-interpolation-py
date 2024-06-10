@@ -8,7 +8,7 @@ def func(x):
 ```
 
 ## Discretization Parameters
-The code features variables floats `start`, `end`, and `delta` as discretization parameters. 
+The code features floats `start`, `end`, and `delta` as discretization parameters. 
 * Mathematically, $`[start, end]`$ is the real interval in which the algorithm limits the input domain of the resulting function to.
 * The float `delta` denotes the magnitude by which each input point for which the output is directly evaluated differ.
 * If `start` and `end` are defined, `delta` must be chosen so that the maximal index is a natural number. If `start` or `end` is defined but not both, along with `delta`, then the undefined parameter must be defined so that the maximal index is a natural number. The program might not function as intended should the maximal index not be a natural.
