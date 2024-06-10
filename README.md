@@ -24,7 +24,8 @@ $`x = start + index * delta`$
 * `index2value(i)`: Returns the value corresponding to the index $`i`$ through a direct application of the aforementioned formula.
 * `value2index(x)`: Returns the index corresponding to the value x through a rearrangement of the indexing formula. The inverse function of `index2value(i)`.
 * `index2func(i)`: Returns the function evaluated at the value corresponding to the $`i`$th index. A composition of `func(x)` to `index2value(i)`.
+* No `value2func(x)` is needed given that `func(x)` is essentially such a function and serves such purpose.
 
 ## Central functions
-* `compute_slopes()`: Computes the pertient slopes for the sake of interpolation, storing values in the global list `slopes`.
+* `compute_slopes()`: Computes the pertinent slopes for the sake of interpolation, storing values in the global list `slopes`.
 * `slopepoint_func(x)`: Returns the evaluation of the interpolation at the value of $`x`$. Computes `slopes` if empty.
